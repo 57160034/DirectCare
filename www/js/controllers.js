@@ -61,7 +61,7 @@ angular.module('starter.controllers', ['firebase'])
       $scope.signup = function() {
 
         // alert('as');
-        $state.go('app.signup');
+        $state.go('signup');
 
       };
 

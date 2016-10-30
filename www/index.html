@@ -28,8 +28,8 @@
 </head>
 
 <body ng-app="starter">
-    <ion-nav-bar class="bar-dark" >
-     <div class="bar bar-header bar-dark"  style="background-color:#000;">
+    <ion-nav-bar  >
+     <div class="bar bar-header bar-dark" >
             <h1 class="title">Balona</h1>
         </div>
         
@@ -37,57 +37,7 @@
     <ion-nav-view cache-view="false" >
        
     </ion-nav-view>
-    <script id="templates/intro.html" type="text/ng-template">
-        <ion-view view-title="Balona">
-            <ion-nav-buttons side="left">
-                <button class="button button-light icon-left ion-skip-forward button-clear no-animation" ng-click="startApp()" ng-show="!slideIndex">
-                </button>
-                <button class="button button-light ion-chevron-left  button-clear no-animation" ng-click="home_login()" ng-show="slideIndex > 0">
-                    Prev
-                </button>
-            </ion-nav-buttons>
-            <ion-nav-buttons side="right">
-                <button class="button button-light ion-chevron-right button-clear no-animation" ng-click="next()" ng-show="slideIndex != 4">
-                    Next
-                </button>
-                <button class="button button-light button-clear no-animation" ng-click="startApp()" ng-show="slideIndex == 4">
-                    Start
-                </button>
-            </ion-nav-buttons>
-            <ion-slide-box on-slide-changed="slideChanged(index)">
-                <ion-slide>
-                    <!-- <h1>1</h1> -->
-                    <div id="logo" style="width:100%;">
-                        <img src="img/1.jpg">
-                    </div>
-                </ion-slide>
-                <ion-slide>
-                    <!-- <h1>2</h1> -->
-                    <div id="logo">
-                        <img src="img/1_3.jpg">
-                    </div>
-                </ion-slide>
-                <ion-slide>
-                    <!-- <h1>3</h1> -->
-                    <div id="logo">
-                        <img src="img/1_5.jpg">
-                    </div>
-                </ion-slide>
-                <ion-slide>
-                    <!-- <h1>3</h1> -->
-                    <div id="logo">
-                        <img src="img/1_6.jpg">
-                    </div>
-                </ion-slide>
-                <ion-slide>
-                    <!-- <h1>3</h1> -->
-                    <div id="logo">
-                        <img src="img/1_7.jpg">
-                    </div>
-                </ion-slide>
-            </ion-slide-box>
-        </ion-view>
-    </script>
+    
 </body>
 
 </html>

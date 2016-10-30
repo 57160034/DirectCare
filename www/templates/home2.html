@@ -1,0 +1,41 @@
+<ion-view view-title="Login">
+  
+  <ion-content>
+   <form name="form_login" ng-submit="doLogin(userLogin)" novalidate>
+      <div class="list">
+      
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="text" ng-model="$parent.userLogin.username" id="user_name" placeholder="Email">
+      </label>
+
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="$parent.userLogin.password" id="user_pass" placeholder="Password">
+      </label>
+      
+    </div>
+    <div class="padding">
+      <button type="submit" class="button button-block button-calm">Login</button>
+    </div>
+   </form>
+
+
+        </form>
+        <label class="item">
+        <a >  <button class="button button-block button-positive" type="button" ng-click="signup()" >Signup</button></a>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="reset()" type="button">Forget password</button>
+        </label>
+
+        <h3> <font color="red" > {{loginData.loginAlert}} </font> </h3>
+
+
+      </div>
+    
+  </ion-content>
+
+
+  </ion-view>
+

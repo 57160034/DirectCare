@@ -71,26 +71,24 @@ angular.module('starter', ['ionic', 'firebase', 'starter.configs','starter.contr
         }
       }
     })
-  .state('app.login', {
+  .state('login', {
       url: '/login',
-      views: {
-        'menuContent': {
+     
+        
           templateUrl: 'templates/login.html',
           controller: 'AppCtrl'
           //controller: 'loginController'
           
 
-        }
-      }
+        
+      
     })
-  .state('app.signup', {
+  .state('signup', {
       url: '/signup',
-      views: {
-        'menuContent': {
+     
           templateUrl: 'templates/signup.html',
           controller: 'signupController'
-        }
-      }
+       
     })
   .state('app.dashboard', {
         url: '/dashboard',
@@ -150,8 +148,20 @@ angular.module('starter', ['ionic', 'firebase', 'starter.configs','starter.contr
     url: '/',
     templateUrl: 'templates/intro.html',
     controller: 'IntroCtrl'
+  })
+
+  .state('home1', {
+    url: '/home1',
+    templateUrl: 'templates/home1.html'
+   
+  })
+
+  .state('home2', {
+    url: '/home2',
+    templateUrl: 'templates/home2.html'
+   
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('home1');
 });
