@@ -102,14 +102,12 @@ angular.module('starter', ['ionic', 'firebase', 'starter.configs','starter.contr
         }
       })
 
-  .state('app.reset', {
+  .state('reset', {
         url: '/reset',
-        views: {
-          'menuContent': {
+       
             templateUrl: "templates/resetemail.html",
             controller: "resetController"
-          }
-        }
+          
       })
  
 

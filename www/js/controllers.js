@@ -69,7 +69,7 @@ angular.module('starter.controllers', ['firebase'])
       $scope.reset = function() {
 
         //alert('as1111');
-        $state.go('app.reset');
+        $state.go('reset');
 
       };
 
