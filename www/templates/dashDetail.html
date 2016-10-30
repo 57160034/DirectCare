@@ -1,0 +1,40 @@
+
+<ion-view hide-back-button="false" title="DashDetail" hide-nav-bar="false">
+<ion-nav-bar class="bar-dark">
+
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+
+       <!--  <button class="button button-light ion-chevron-left  button-clear no-animation"  href="#/app/dashboard" >
+                    back
+                </button> -->
+
+         </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+
+        </ion-nav-buttons>
+
+
+     
+    </ion-nav-bar>
+  <ion-content class="has-header">
+<br><br>
+  <div >
+
+    <center>
+      <img src="{{user.photoURL}}" width="50%">
+      <h2>{{ user.displayName }}</h2>
+      <p>{{ user.email }}</p>
+    </center>
+</div>
+
+  </ion-content>
+</ion-view>
